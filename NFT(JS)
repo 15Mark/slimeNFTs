@@ -1,0 +1,28 @@
+const markNFTs = []
+
+function mintNFT (name,race,gender,strength) {
+   const NFT = {
+    "name": name, 
+    "race": race,
+    "gender": gender, 
+    "strength": strength  
+   }
+markNFTs.push(NFT);
+console.log("CONGRATS FOR GETTING" + name);
+}
+
+function listNFTs () {
+  for (let i = 0; i < markNFTs.length; i++){
+     console.log(markNFTs[i]);
+  }
+ }
+
+function getTotalSupply() {
+console.log(markNFTs.length);
+}
+
+mintNFT("phil","slime","any","90");
+mintNFT("carl","minotaur","male","102");
+mintNFT("rachel","slime","any","81");
+listNFTs();
+getTotalSupply();
